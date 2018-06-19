@@ -22,7 +22,7 @@ import com.google.common.io.Files;
 /**
  * 
  * @title 		Guava JoinerTest
- * @description	
+ * @description	源码分析文章https://blog.jamespan.me/2015/02/08/guava-basic-utilities-1
  * @usage		
  * @copyright	Copyright 2017  marsmob Corporation. All rights reserved.
  * @company		marsmob
