@@ -21,7 +21,7 @@ import com.google.common.io.Files;
 
 /**
  * 
- * @title 		Guava JoinerTest
+ * @title 		Guava JoinerTest 字符串拼接
  * @description	源码分析文章https://blog.jamespan.me/2015/02/08/guava-basic-utilities-1
  * @usage		
  * @copyright	Copyright 2017  marsmob Corporation. All rights reserved.

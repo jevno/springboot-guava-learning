@@ -15,7 +15,7 @@ import com.google.common.collect.Lists;
 
 /**
  * 
- * @title 		Splitter Test
+ * @title 		Splitter Test 字符串截取
  * @description	源码分析文章https://blog.jamespan.me/2015/02/09/guava-basic-utilities-2
  * @usage		
  * @copyright	Copyright 2017  marsmob Corporation. All rights reserved.
