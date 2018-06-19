@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 import org.junit.Test;
 
 import com.google.common.base.Splitter;
+import com.google.common.collect.Lists;
 
 /**
  * 
@@ -32,6 +33,15 @@ public class SplitterTest {
 		assertThat(result.size(), equalTo(2));
 		assertThat(result.get(0), equalTo("hello"));
 		assertThat(result.get(1), equalTo("world"));
+		
+		String[] split = "hello|world|||".split("\\|"); // java内置的会忽略空内容
+		assertThat(split, equalTo(Lists.newArrayList("hello", "world").toArray()));
+		
+		split = "hello|world|||".split("[|]"); // java内置的会忽略空内容
+		assertThat(split, equalTo(Lists.newArrayList("hello", "world").toArray()));
+		
+		split = "hello|world|||".split(Pattern.quote("|")); // java内置的会忽略空内容
+		assertThat(split, equalTo(Lists.newArrayList("hello", "world").toArray()));
 	}
 	
 	/**
